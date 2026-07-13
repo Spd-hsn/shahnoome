@@ -8,8 +8,20 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Lalezar&amp;family=Vazirmatn:wght@300;400;500;700;900&amp;family=Gulzar&amp;display=swap" rel="stylesheet"/>
-
-<link href="assets/css/style.css" rel="stylesheet"/></head>
+<link href="assets/css/style.css" rel="stylesheet"/><style id="language-switcher-styles">
+.language-switcher{
+  display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+  padding:6px 10px;border:1px solid rgba(190,142,46,.45);
+  border-radius:999px;font-size:.86rem;font-weight:700;color:var(--ink-soft);
+  background:rgba(255,249,236,.6)
+}
+.language-switcher a{color:var(--green);transition:color .2s}
+.language-switcher a:hover{color:var(--gold)}
+.language-switcher .active-language{color:var(--clay)}
+@media(max-width:860px){
+  .language-switcher{order:2;margin-inline-start:auto}
+}
+</style></head>
 <body>
 <header>
 <div class="wrap"><nav>
@@ -20,7 +32,7 @@
 <a href="#chars">شخصیت‌ها</a>
 <a href="#register">ثبت‌نام</a>
 </div>
-<a class="btn" href="#register">ثبت‌نام کودک</a>
+<div aria-label="تغییر زبان" class="language-switcher"><span class="active-language">فارسی</span><span aria-hidden="true">|</span><a href="en/">English</a></div><a class="btn" href="#register">ثبت‌نام کودک</a>
 <button aria-label="فهرست" class="menu-btn" onclick="document.querySelector('.navlinks').style.display='flex';this.style.display='none'">
 <svg fill="none" height="26" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="26"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
 </button>
@@ -98,9 +110,8 @@
 <div class="contacts">
 <a href="https://t.me/Marjan_Izadi" rel="noopener" target="_blank"><svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20"><path d="M21.9 4.3l-3 14.2c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.2c-.3.3-.5.4-.9.4l.3-4.6 8.4-7.6c.4-.3-.1-.5-.6-.2L7.5 12 3 10.6c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.5 1.7z"></path></svg> تلگرام: ‪@Marjan_Izadi‬</a>
 <a href="https://instagram.com/shahnoome" rel="noopener" target="_blank"><svg fill="none" height="20" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="20"><rect height="18" rx="5" width="18" x="3" y="3"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" fill="currentColor" r="1"></circle></svg> اینستاگرام: ‪@shahnoome‬</a>
-</div>
-<p class="cta-note">اطلاعات ثبت‌نام در تلگرام و اطلاع‌رسانی‌ها در اینستاگرام منتشر می‌شود.
-                        <p>جهت بهره‌مندی از تخفیف چندنفره، حتماً پیش از ثبت‌نام با مسئول برگزاری هماهنگ کنید.</p></p>
+</div><p class="cta-note">اطلاعات ثبت‌نام در تلگرام و اطلاع‌رسانی‌ها در اینستاگرام منتشر می‌شود.</p><p class="cta-note" style="margin-top:8px">جهت بهره‌مندی از تخفیف چندنفره، حتماً پیش از ثبت‌نام با مسئول برگزاری هماهنگ کنید.</p>
+
 </div>
 </div>
 </section>
@@ -111,6 +122,5 @@
 <p style="opacity:.7;margin-top:6px">© ۱۴۰۵ شاهنومه</p>
 </div>
 </footer>
-
 <script defer="True" src="assets/js/main.js"></script></body>
 </html>
